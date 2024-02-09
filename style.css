@@ -1,0 +1,138 @@
+:root {
+  --color-hover: black;
+  --background: rgba(160, 203, 229, 0.925);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-image: url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Background.png");
+  background-color: black;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.page-title {
+  color: #ffff;
+  font-size: 45px;
+  margin: 30px 10px 25px 5px;
+  transition: color 0.7s;
+}
+
+body > img {
+  margin: 10px 10px;
+}
+
+img {
+  width: 25%;
+  max-height: 25%;
+}
+
+.group-form {
+  /* background-color: lightskyblue; */
+  display: flex;
+  /* flex-direction: row; */
+  margin: 0 20%;
+}
+
+@media (max-width: 768px) {
+  .group-form {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  img {
+    width: 50%;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.typed {
+  margin: 35px 0px;
+  color: #ffff;
+  font-size: 30px;
+}
+
+.typed-cursor {
+  font-size: 30px;
+  color: white;
+}
+
+.values {
+  margin: 10px 10px;
+  padding: 5px 5px;
+  border: none;
+}
+
+.money {
+  border-radius: 5px;
+  border: none;
+  background-color: var(--background);
+}
+
+.select {
+  background-color: var(--background);
+}
+
+.button:hover {
+  background-color: var(--color-hover);
+  transition: background-color 0.7s;
+  color: lightskyblue;
+}
+
+.page-title:hover {
+  color: var(--color-hover);
+}
+
+/* SPINER */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
