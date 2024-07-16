@@ -1,5 +1,5 @@
 const typed = new Typed(".typed", {
-  strings: ["<i class='moneda'>USD / EUR<i>"],
+  strings: ["<i class='moneda'> USD / EUR<i>"],
   typeSpeed: 110,
   starDelay: 100,
   backSpeed: 90,
@@ -8,7 +8,6 @@ const typed = new Typed(".typed", {
   showCursor: true,
   cursorChar: "",
   contentType: "html",
-  loopCount: 1,
   loop: false,
 });
 
